@@ -1,0 +1,54 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="EasyNews.SiteMaster" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head runat="server">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title></title>
+    <script src="Scripts/jquery-1.4.1.min.js" type="text/javascript"></script>
+    <link href="~/Styles/Site.css?v=1.0" rel="stylesheet" type="text/css" />    
+    <asp:ContentPlaceHolder ID="HeadContent" runat="server">
+    </asp:ContentPlaceHolder>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $("#BulletedList1").hide();	
+            $("#button2").click(function () {
+                $("#BulletedList1").slideToggle(500);
+            });
+
+        });
+    </script>
+</head>
+<body>
+    <div class="main">        
+            <div class="wrapper">
+			        <div id="Div1" class="oneblog right" runat="server">
+				        <div class="date lite">
+                            <asp:Label ID="Label3" runat="server" Text=""></asp:Label>
+                        </div>
+				        <h1><asp:Label ID="Label2" runat="server" Text="Новостей нет"></asp:Label></h1>
+                        <div class="float left">
+					        <asp:Image ID="Image1" runat="server" />                            
+				        </div>				    
+                        <p ID="TextBox1" runat="server"></p>
+			        </div><!-- /.oneblog -->
+                    <div class="clearfix"></div>
+                    <form id="Form1" runat="server">
+			            <div class="postnav" >
+                            <asp:HyperLink ID="HyperLink1" class="prev" runat="server">Предыдущая новость</asp:HyperLink>
+                            <asp:HyperLink ID="HyperLink2" class="next" runat="server">Следующая новость</asp:HyperLink> 
+                            <div class="clearfix"></div>
+			            </div>
+                        <a id="button2" class="button_blue" href="#">Показать сохраненные новости</a>
+                        <asp:HyperLink ID="HyperLink4" class="button_blue" runat="server">Сохранить новость</asp:HyperLink>
+                        <div>
+                            <asp:BulletedList ID="BulletedList1" runat="server">
+                            </asp:BulletedList>
+                        </div>  
+                     </form>
+		    </div><!-- /.wrapper -->
+            <asp:ContentPlaceHolder ID="MainContent" runat="server"/>
+        
+    </div>
+</body>
+</html>

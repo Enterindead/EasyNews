@@ -1,0 +1,129 @@
+﻿body 
+{
+    margin: 0
+    font: 12px/18px Arial, sans-serif;
+    background: #f0f0f0;
+    position: relative;
+    height: 100%;
+}
+.main {
+    background: #fff;
+    position: relative;
+    width: 100%;
+}
+.wrapper {
+    width: 900px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.clearfix:before, .clearfix:after, .wrapper:before, .wrapper:after {
+    content: "";
+    display: table;
+}
+
+.postnav {
+    margin: 40px 0;
+    padding: 26px 0px;
+    border-top: 1px solid #D0D0D0;
+    border-bottom: 1px solid #D0D0D0;
+    display: block;
+}
+.postnav .hidden
+{
+    display:none;
+}
+
+.postnav .prev {
+    float: left;
+    padding-left: 9px;
+    position: relative;
+}
+.postnav .next {
+    float: right;
+    padding-right: 9px;
+    position: relative;
+}
+
+.postnav a {
+    color: #1280c1;
+    text-decoration: none;
+    outline: none;
+}
+
+.postnav a .grey{
+    color: #808080;
+    text-decoration: none;
+}
+
+
+.oneblog {
+    padding: 0;
+    font: 14px/20px Arial, sans-serif;
+}
+.lite {
+    color: #959595;
+}
+
+h1 {
+    font: 300 30px/34px 'Roboto', sans-serif;
+    margin: 0 0 22px 0;
+}
+
+.float.left {
+    margin: 5px 30px 18px 0;
+}
+
+.left {
+    float: left;
+}
+
+.right {
+    float: right;
+}
+
+.clearfix:after, .wrapper:after {
+    clear: both;
+}
+
+.button_blue {
+    -moz-box-shadow: inset 0px 1px 0px 0px #429ed4;
+    -webkit-box-shadow: inset 0px 1px 0px 0px #429ed4;
+    box-shadow: inset 0px 1px 0px 0px #429ed4;
+    background-color: #1281c1;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+    border: 1px solid #0b69a0;
+    display: inline-block;
+    color: #ffffff;
+    font: bold 12px/18px Arial, sans-serif;
+    text-transform: uppercase;
+    padding: 8px 22px 7px 22px;
+    text-decoration: none;
+    text-shadow: -1px -1px 0px #0c5986;
+}
+
+.saved_button {
+    -moz-box-shadow: inset 0px 1px 0px 0px #13C434;
+    -webkit-box-shadow: inset 0px 1px 0px 0px #13C434;
+    box-shadow: inset 0px 1px 0px 0px #13C434;
+    background-color: #10940E;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+    border: 1px solid #15991E;
+    display: inline-block;
+    color: #ffffff;
+    font: bold 12px/18px Arial, sans-serif;
+    text-transform: uppercase;
+    padding: 8px 22px 7px 22px;
+    text-decoration: none;
+    text-shadow: -1px -1px 0px #0c5986;
+    cursor: default;
+}
+
+.button_blue:active {
+	position:relative;
+	top:1px;
+}
